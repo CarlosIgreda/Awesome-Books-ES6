@@ -19,7 +19,7 @@ function getNumberSuffix(day) {
   }
 }
 
-export default function updateDate() {
+const updateDate = () => {
   const now = DateTime.now().setLocale('en-US');
   const month = now.monthLong;
   const { day } = now;
@@ -37,4 +37,6 @@ export default function updateDate() {
   $date.innerHTML = dateString;
 
   setTimeout(updateDate, 1000);
-}
+};
+
+export default updateDate;

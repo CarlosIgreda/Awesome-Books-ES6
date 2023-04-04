@@ -21,7 +21,7 @@ export default class Books {
     }
   }
 
-  remove(idSelected) {
+  remove = (idSelected) => {
     document.getElementById(idSelected).parentElement.remove();
     this.bookList.splice(
       this.bookList.findIndex((e) => e.title + e.author === idSelected),
@@ -30,7 +30,7 @@ export default class Books {
     localStorage.setItem('bookList', JSON.stringify(this.bookList));
   }
 
-  add(title, author) {
+  add = (title, author) => {
     const item = { title, author };
     this.bookList.push(item);
     $books.insertAdjacentHTML(
