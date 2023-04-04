@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books: With ES6</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <nav class="navcontainer">
+            <h3 class="h3nav">Awesome Books</h3>
+            <ul class="ulnav">
+                <li class="linav"><a class="anav listpage" href="#list">List</a></li>
+                <li class="linav"><a class="anav addpage" href="#addnew">Add new</a></li>
+                <li class="linav"><a class="anav acontact" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="datecontainer">
+            <p class="datepage"></p>
+        </div>
+        <section id="list" class="books">
+            <h1 class="h1list titles">All awesome books</h1>
+            <div class="listcontainer"></div>
+        </section>
+        <section id="addnew" class="newbooks">
+            <h1 class="h1add titles">Add a new book</h1>
+            <form class="formadd" action="submit" name="form" method="POST">
+                <input type="text" name="title" class="title inputs" placeholder="Title" required>
+                <input type="text" name="author" class="author inputs" placeholder="Author" required>
+                <button type="button" class="addbutton shadow">Add</button>
+                <div class="error">Please, complete all fields.</div>
+            </form>
+        </section>
+        <section id="contact" class="contactinfo">
+            <h1 class="h1contact titles">Contact Information</h1>
+            <div class="contacttext">
+                <p class="pcontact">Do you have any questions or you just want to to say "Hello"?</p>
+                <p class="pcontact secondp">You can reach out to us!</p>
+            </div>
+            <ul class="ulcontact">
+                <li class="licontact">Our e-mail: mail@mail.com</li>
+                <li class="licontact">Our phone number: 0043586534422</li>
+                <li class="licontact">Our address: Streetname 22, 84503 City, Country</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="copyright">Copyright<span class="points">...</span></p>
+    </footer>
+    <script src="./index.js" type="module"></script>
+    <script src="./modules/events.js" type="module"></script>
+    <script src="./modules/date.js" type="module"></script>
+</body>
+</html>
