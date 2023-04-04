@@ -12,7 +12,7 @@ const $newSection = document.querySelector('.newbooks');
 const $contactSection = document.querySelector('.contactinfo');
 const bookObj = new Books();
 
-export default function events() {
+const events = () => {
   $addButton.addEventListener('click', () => {
     if ($title.value !== '' && $author.value !== '') {
       bookObj.add($title.value.trim(), $author.value.trim());
@@ -44,4 +44,6 @@ export default function events() {
     $contactSection.style.display = 'none';
     $newSection.style.display = 'none';
   });
-}
+};
+
+export default events;
