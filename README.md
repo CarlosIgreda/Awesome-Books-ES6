@@ -20,7 +20,7 @@
 
 # 📖 Awesome books <a name="about-project"></a>
 
-In this project, I will restructure your Awesome books app code. The goal is to make it more organized by using modules. I will also practice the ES6 syntax that I have learned.. I will be using them in all Microverse projects and most likely in my future job as well, so it is important to know them!
+In this project, I will restructure your Awesome books app code. The goal is to make it more organized by using modules. I will also practice the ES6 syntax that I have learned.
 
 ## 🛠 Built With <a name="built-with"></a>
 
